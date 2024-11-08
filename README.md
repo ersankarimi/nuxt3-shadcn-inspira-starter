@@ -1,75 +1,117 @@
-# Nuxt Minimal Starter
+# Nuxt Minimal Starter with Inspira UI Integration
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Overview
 
-## Setup
+This project provides a minimal Nuxt.js starter template with built-in integration for Inspira UI, a versatile component library for Vue and Nuxt. It's designed to help you quickly bootstrap new projects and build stunning, interactive web applications.
 
-Make sure to install dependencies:
+## Getting Started
 
-```bash
-# npm
-npm install
+1. **Clone the Repository:**
 
-# pnpm
-pnpm install
+   ```bash
+   git clone [https://github.com/ersankarimi/nuxt3-shadcn-inspira-starter](https://github.com/ersankarimi/nuxt3-shadcn-inspira-starter)
 
-# yarn
-yarn install
+   cd your-repo-name
+   ```
 
-# bun
-bun install
+2. **Install Dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+   Or, if you prefer:
+
+   ```bash
+   pnpm install
+   ```
+
+   ```bash
+   yarn install
+   ```
+
+   ```bash
+   bun install
+   ```
+
+3. **Start Development Server:**
+   ```bash
+   npm run dev
+   ```
+   Or, if you prefer:
+   ```bash
+   pnpm dev
+   ```
+   ```bash
+   yarn dev
+   ```
+   ```bash
+   bun run dev
+   ```
+
+## Integrating Inspira UI
+
+Inspira UI is already included in this project. To use its components, simply import them into your Vue components. For example:
+
+```vue
+<script>
+import InspiraButton from "inspira-ui/button";
+
+export default {
+  components: {
+    InspiraButton,
+  },
+};
+</script>
+
+<template>
+  <div>
+    <InspiraButton variant="primary">
+      Click Me
+    </InspiraButton>
+  </div>
+</template>
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Building for Production
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
 npm run build
+```
 
-# pnpm
+Or, if you prefer:
+
+```bash
 pnpm build
+```
 
-# yarn
+```bash
 yarn build
+```
 
-# bun
+```bash
 bun run build
 ```
 
-Locally preview production build:
+## Deployment
 
-```bash
-# npm
-npm run preview
+Refer to the Nuxt.js documentation for detailed deployment instructions: https://nuxt.com/docs/getting-started/deployment
 
-# pnpm
-pnpm preview
+## Contributing
 
-# yarn
-yarn preview
+We welcome contributions from everyone! To contribute:
 
-# bun
-bun run preview
-```
+1. **Fork** the repository.
+2. **Create a new branch** for your feature or bug fix.
+3. **Commit your changes** and push to your branch.
+4. **Create a pull request**.
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Resources
+
+- Nuxt.js Documentation: https://nuxt.com
+- Inspira UI Documentation: [https://inspira-ui.com](https://inspira-ui.com)
+- shadcn/vue: [https://www.shadcn-vue.com/](https://www.shadcn-vue.com/)
